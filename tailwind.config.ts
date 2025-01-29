@@ -18,6 +18,9 @@ export default {
 		fontFamily: {
 			neuton: '--font-neuton'
 		},
+		boxShadow: {
+			custom: '2px 2px hsl(var(--popover))'
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

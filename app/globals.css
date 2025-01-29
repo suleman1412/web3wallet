@@ -34,7 +34,7 @@
    --popover-foreground: 0 0% 98%; /* Light text */
    --primary: 0 0% 98%; /* Almost white */
    --primary-foreground: 190 100% 6%; /* Dark background */
-   --secondary: 0 0% 27%; /* Medium gray */
+   --secondary: 0 0% 75%; /* Medium gray */
    --secondary-foreground: 0 0% 98%; /* Light text */
    --muted: 190 50% 10%; /* Dark teal */
    --muted-foreground: 0 0% 70%; /* Light gray */
@@ -50,8 +50,13 @@
 @layer base {
   * {
         @apply border-border;
-    }
-  body {
-        @apply bg-radial text-foreground font-neuton backdrop-blur-[1px];
-    }
+        
+  }
+
+  html,body{
+    min-height: 100%;
+  }
+  .shadowBtn{
+    box-shadow: 0px 2px hsl(var(--muted-foreground));
+  }
 }

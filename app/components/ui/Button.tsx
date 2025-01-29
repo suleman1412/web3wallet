@@ -19,6 +19,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        keyboard: "bg-card w-fit px-4 py-1 h-8 rounded-sm font-sans shadowBtn transition-all active:translate-y-[4px]  ease-in-out active:shadow-none relative before:content-[''] before:absolute  before:w-[100%] before:h-[100%] before:top-0 before:left-0 before:shadow-inner before:shadow-ring before:rounded-sm before:opacity-10",
+        keyboardoutline: "border border-input bg-background font-sans shadowBtn hover:bg-accent hover:text-accent-foreground transition-all active:translate-y-[4px]  ease-in-out active:shadow-none"
       },
       size: {
         default: "h-9 px-4 py-2",
