@@ -10,16 +10,13 @@ export default {
   theme: {
   	extend: {
   		backgroundImage: {
-  			radial: 'radial-gradient( hsl(var(--foreground)) 1px, hsl(var(--background)) 1px)',
-  		},
+			radial: 'radial-gradient( hsl(var(--foreground)) 1px, hsl(var(--background)) 1px)',
+		},
   		backgroundSize: {
   			dots: '20px 20px'
   		},
 		fontFamily: {
 			neuton: '--font-neuton'
-		},
-		boxShadow: {
-			custom: '2px 2px hsl(var(--popover))'
 		},
   		colors: {
   			background: 'hsl(var(--background))',
@@ -61,7 +58,8 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			invert: 'hsl(var(--invert))'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

@@ -9,7 +9,7 @@ export default function NavBar() {
         <div className="backdrop-blur-[1px]">
             <Card className="mx-6 my-8 text-[1.5rem] px-6 py-4 flex justify-between items-center rounded-full  ">
                 <Link href={'/'}>
-                    <div className="font-neuton font-semibold flex gap-2 items-center">
+                    <div className="font-neuton font-semibold flex gap-4 items-center">
                         <Coins/>
                         Wallet
                     </div>

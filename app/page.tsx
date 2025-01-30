@@ -1,5 +1,5 @@
-import Hero from "./components/Hero";
-import Landing from "./components/Landing";
+import CTA from "./components/CTA";
+import Landing from "./components/Hero";
 import SupportedCurrencies from "./components/SupportedCurrencies";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
     <div>
       <Landing />
       <SupportedCurrencies />
+      <CTA />
     </div>
   );
 }
