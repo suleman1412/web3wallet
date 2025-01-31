@@ -7,7 +7,7 @@ import { motion, easeInOut } from "framer-motion";
 
 export default function SeedGen() {
     const [mnemonics, setMnemonics] = useState("");
-    const router = useRouter(); // Next.js router for navigation
+    const router = useRouter(); 
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setMnemonics(event.target.value);
@@ -18,7 +18,7 @@ export default function SeedGen() {
 
         const generatedMnemonic = mnemonics.trim() ? mnemonics : bip39.generateMnemonic();
         setMnemonics(generatedMnemonic);
-        // console.log("Mnemonic:", generatedMnemonic);
+        console.log("Mnemonic:", generatedMnemonic);
 
         setTimeout(() => {
             router.push("/dashboard");
@@ -31,7 +31,7 @@ export default function SeedGen() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, ease: easeInOut }}
         >
-            <Card className="rounded-xl px-5 md:px-10 py-4 md:py-4 flex flex-col gap-4">
+            <Card className="rounded-xl mx-6 px-5 md:px-10 py-4 md:py-4 flex flex-col gap-4">
                 <h1 className="text-2xl md:text-3xl font-bold">
                     Secret Recovery Phrase
                 </h1>
