@@ -4,50 +4,50 @@
 
 @layer base {
     :root {
-   --background: 0 0% 100%; /* White */
-   --foreground: 210 20% 9%; /* Dark grayish text */
-   --card: 0 0% 85%; /* Light gray card */
+   --background: 0 0% 100%; 
+   --foreground: 210 20% 9%; 
+   --card: 0 0% 85%; 
    --cardHover: 0 0% 75%;
-   --card-foreground: 210 20% 9%; /* Dark grayish text */
-   --popover: 0 0% 100%; /* White */
-   --popover-foreground: 210 20% 9%; /* Dark grayish text */
-   --primary: 210 20% 9%; /* Dark grayish */
-   --primary-foreground: 0 0% 98%; /* Almost white */
-   --secondary: 0 0% 27%; /* Medium gray */
-   --secondary-foreground: 0 0% 98%; /* Almost white */
-   --muted: 0 0% 50%; /* Light gray */
-   --muted-foreground: 0 0% 27%; /* Medium gray */
-   --accent: 0 0% 85%; /* Light gray */
-   --accent-foreground: 210 20% 9%; /* Dark grayish */
-   --destructive: 0 84.2% 60.2%; /* Kept same */
-   --destructive-foreground: 0 0% 98%; /* Almost white */
-   --border: 0 0% 27%; /* Medium gray */
-   --input: 0 0% 27%; /* Medium gray */
-   --ring: 210 20% 9%; /* Dark grayish */
+   --card-foreground: 210 20% 9%; 
+   --popover: 0 0% 100%; 
+   --popover-foreground: 210 20% 9%; 
+   --primary: 210 20% 9%; 
+   --primary-foreground: 0 0% 98%; 
+   --secondary: 0 0% 27%; 
+   --secondary-foreground: 0 0% 98%; 
+   --muted: 0 0% 50%; 
+   --muted-foreground: 0 0% 27%; 
+   --accent: 0 0% 85%; 
+   --accent-foreground: 210 20% 9%; 
+   --destructive: 0 84.2% 60.2%; 
+   --destructive-foreground: 0 0% 98%; 
+   --border: 0 0% 27%; 
+   --input: 0 0% 27%; 
+   --ring: 210 20% 9%; 
    --invert: 190 100% 6%;
    --radius: 0.5rem
     }
    .dark {
-   --background: 190 100% 6%; /* Dark teal/blue-black from darkBG */
-   --foreground: 0 0% 98%; /* Light text */
-   --card: 190 50% 15%; /* Dark teal card from cardColor */
+   --background: 190 100% 6%; 
+   --foreground: 0 0% 98%; 
+   --card: 190 50% 15%; 
    --cardHover: 190 50% 25%;
-   --card-foreground: 0 0% 98%; /* Light text */
-   --popover: 190 100% 6%; /* Dark teal/blue-black */
-   --popover-foreground: 0 0% 98%; /* Light text */
-   --primary: 0 0% 98%; /* Almost white */
-   --primary-foreground: 190 100% 6%; /* Dark background */
-   --secondary: 0 0% 75%; /* Medium gray */
-   --secondary-foreground: 0 0% 98%; /* Light text */
-   --muted: 190 50% 10%; /* Dark teal */
-   --muted-foreground: 0 0% 70%; /* Light gray */
-   --accent: 190 50% 15%; /* Dark teal */
-   --accent-foreground: 0 0% 98%; /* Light text */
-   --destructive: 0 62.8% 40.6%; /* Kept same */
-   --destructive-foreground: 0 0% 98%; /* Almost white */
-   --border: 0 0% 20%; /* Dark gray from border */
-   --input: 0 0% 20%; /* Dark gray */
-   --ring: 0 0% 83.1%; /* Light gray */
+   --card-foreground: 0 0% 98%; 
+   --popover: 190 100% 6%; 
+   --popover-foreground: 0 0% 98%; 
+   --primary: 0 0% 98%; 
+   --primary-foreground: 190 100% 6%; 
+   --secondary: 0 0% 75%; 
+   --secondary-foreground: 0 0% 98%; 
+   --muted: 190 50% 10%; 
+   --muted-foreground: 0 0% 70%; 
+   --accent: 190 50% 15%; 
+   --accent-foreground: 0 0% 98%; 
+   --destructive: 0 62.8% 40.6%; 
+   --destructive-foreground: 0 0% 98%; 
+   --border: 0 0% 20%; 
+   --input: 0 0% 20%; 
+   --ring: 0 0% 83.1%; 
    --invert: 0 0% 100%;
     }
    }
