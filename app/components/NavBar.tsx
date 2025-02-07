@@ -1,4 +1,3 @@
-"use client"
 import ThemeToggle from "./ui/ThemeToggle";
 import Card from "./ui/Card";
 import Link from "next/link";
@@ -16,7 +15,6 @@ export default function NavBar() {
                 </Link>
                 <div className="flex gap-6 items-center">
                     <ThemeToggle />
-
                 </div>
             </Card>
         </div>

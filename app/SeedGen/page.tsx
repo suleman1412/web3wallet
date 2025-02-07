@@ -1,23 +1,23 @@
-"use client";
-import { useState } from "react";
+"use client"
 import { useRouter } from "next/navigation";
-import * as bip39 from "bip39";
+import { generateMnemonic } from "bip39";
 import Card from "../components/ui/Card";
 import { motion, easeInOut } from "framer-motion";
+import { useTheme } from "../context/ThemeContext";
 
 export default function SeedGen() {
-    const [mnemonics, setMnemonics] = useState("");
+    const { mnemonics, setMnemonics } = useTheme()
     const router = useRouter(); 
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setMnemonics(event.target.value);
+            setMnemonics!(event.target.value);
     };
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        const generatedMnemonic = mnemonics.trim() ? mnemonics : bip39.generateMnemonic();
-        setMnemonics(generatedMnemonic);
+        const generatedMnemonic = mnemonics!.trim() ? mnemonics : generateMnemonic();
+        setMnemonics!(generatedMnemonic!);
         console.log("Mnemonic:", generatedMnemonic);
 
         setTimeout(() => {

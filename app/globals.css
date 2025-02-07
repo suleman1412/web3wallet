@@ -7,6 +7,7 @@
    --background: 0 0% 100%; /* White */
    --foreground: 210 20% 9%; /* Dark grayish text */
    --card: 0 0% 85%; /* Light gray card */
+   --cardHover: 0 0% 75%;
    --card-foreground: 210 20% 9%; /* Dark grayish text */
    --popover: 0 0% 100%; /* White */
    --popover-foreground: 210 20% 9%; /* Dark grayish text */
@@ -30,6 +31,7 @@
    --background: 190 100% 6%; /* Dark teal/blue-black from darkBG */
    --foreground: 0 0% 98%; /* Light text */
    --card: 190 50% 15%; /* Dark teal card from cardColor */
+   --cardHover: 190 50% 25%;
    --card-foreground: 0 0% 98%; /* Light text */
    --popover: 190 100% 6%; /* Dark teal/blue-black */
    --popover-foreground: 0 0% 98%; /* Light text */
@@ -39,9 +41,9 @@
    --secondary-foreground: 0 0% 98%; /* Light text */
    --muted: 190 50% 10%; /* Dark teal */
    --muted-foreground: 0 0% 70%; /* Light gray */
-   --accent: 190 50% 10%; /* Dark teal */
+   --accent: 190 50% 15%; /* Dark teal */
    --accent-foreground: 0 0% 98%; /* Light text */
-   --destructive: 0 62.8% 30.6%; /* Kept same */
+   --destructive: 0 62.8% 40.6%; /* Kept same */
    --destructive-foreground: 0 0% 98%; /* Almost white */
    --border: 0 0% 20%; /* Dark gray from border */
    --input: 0 0% 20%; /* Dark gray */
@@ -64,7 +66,7 @@
   .container {
     position: relative;
     width: 100%;
-    height: 20vh;
+    height: 10em;
     overflow: hidden;
     background-color: hsl(var(--invert));
     background-image: radial-gradient( hsl(var(--background)) 2px, hsl(var(--invert)) 2px);

@@ -19,7 +19,7 @@ const Landing = () => {
                         Generate Secure Crypto Keypairs
                     </LineShadowText>
                     <h1 className="text-md font-sans text-secondary">
-                        Create secure keypairs for Bitcoin, Ethereum, and Solana wallets with our easy-to-use generator.
+                        Create secure keypairs for Ethereum, and Solana wallets with our easy-to-use generator.
                     </h1>
                 </div>
                 <div className="flex gap-4 ">
@@ -29,7 +29,7 @@ const Landing = () => {
                         </Button>
                     </Link>
                     <Link href={'#'}>
-                        <Button variant={'keyboardoutline'}>
+                        <Button variant={'ghost'} className="font-sans hover:bg-accent">
                             Learn More
                         </Button>
                     </Link>

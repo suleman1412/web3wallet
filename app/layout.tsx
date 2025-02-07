@@ -39,7 +39,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <div 
-            className="flex flex-col z-[-2]  h-screen max-w-3xl mx-auto ">
+            className="flex flex-col z-[-2]  h-screen max-w-7xl mx-auto ">
                 <NavBar />
                 <div className="flex-1 backdrop-blur-[1px] ">
                   {children}
