@@ -4,7 +4,7 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <Card className="rounded-[10px_10px_0px_0px] p-4 font-sans text-[0.8rem] mt-8 mx-6 flex justify-between items-center">
+        <Card className="rounded-[10px_10px_0px_0px] p-4 font-sans text-[0.7rem] mt-8 mx-6 flex justify-between items-center">
             <div>
                 Designed and Developed by <Link href={'https://github.com/suleman1412'}><span className="font-semibold">Suleman</span></Link>
             </div>
