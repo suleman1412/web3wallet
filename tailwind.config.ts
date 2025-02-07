@@ -10,8 +10,8 @@ export default {
   theme: {
   	extend: {
   		backgroundImage: {
-  			radial: 'radial-gradient( hsl(var(--foreground)) 1px, hsl(var(--background)) 1px)',
-  		},
+			radial: 'radial-gradient( hsl(var(--foreground)) 1px, hsl(var(--background)) 1px)',
+		},
   		backgroundSize: {
   			dots: '20px 20px'
   		},
@@ -23,7 +23,8 @@ export default {
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
+  				foreground: 'hsl(var(--card-foreground))',
+				hover: 'hsl(var(--cardHover))'
   			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
@@ -58,7 +59,8 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			invert: 'hsl(var(--invert))'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

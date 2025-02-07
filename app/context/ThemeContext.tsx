@@ -1,9 +1,11 @@
 "use client"
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import { createContext, Dispatch, ReactNode, SetStateAction, useContext, useEffect, useState } from "react";
 
 export interface ThemeToggleProps {
     theme: 'light' | 'dark';
     toggleTheme: () => void;
+    mnemonics?: string;
+    setMnemonics? : Dispatch<SetStateAction<string>>
 }
 
 
@@ -11,6 +13,7 @@ const ThemeContext = createContext<ThemeToggleProps | undefined>(undefined)
 
 export function ThemeProvider ({ children }: { children: ReactNode}) {
     const [theme, setTheme] = useState<ThemeToggleProps['theme']>('light')
+    const [mnemonics, setMnemonics] = useState("");
 
     const toggleTheme = () => {
         setTheme(prev => prev ==='light' ? 'dark': 'light')
@@ -22,7 +25,7 @@ export function ThemeProvider ({ children }: { children: ReactNode}) {
     }, [theme])
 
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={{ theme, toggleTheme, mnemonics, setMnemonics }}>
             {children}
         </ThemeContext.Provider>
     )

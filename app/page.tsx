@@ -1,9 +1,13 @@
-import Hero from "./components/Hero";
+import CTA from "./components/CTA";
+import Landing from "./components/Hero";
+import SupportedCurrencies from "./components/SupportedCurrencies";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <Landing />
+      <SupportedCurrencies />
+      <CTA />
     </div>
   );
 }

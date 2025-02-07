@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 font-sans whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -19,6 +19,8 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        keyboard: "bg-background w-fit px-4 py-1 h-8 hover:bg-accent border-[1px] rounded-sm font-sans shadowBtn transition-all active:translate-y-[4px]  ease-in-out active:shadow-none relative before:content-[''] before:absolute  before:w-[100%] before:h-[100%] before:top-0 before:left-0 before:shadow-inner before:shadow-ring before:rounded-sm before:opacity-10",
+        keyboardoutline: "border border-input  bg-background font-sans shadowBtn hover:bg-accent hover:text-accent-foreground transition-all active:translate-y-[4px]  ease-in-out active:shadow-none"
       },
       size: {
         default: "h-9 px-4 py-2",

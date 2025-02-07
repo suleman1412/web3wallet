@@ -8,7 +8,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ children, className }) => {
-    const baseStyles = "mx-6 bg-background border-[1px] shadow-sm shadow-ring"
+    const baseStyles = "bg-background border-[1px] shadow-sm shadow-ring"
 
     return (
         <div className={cn(baseStyles, className)}>

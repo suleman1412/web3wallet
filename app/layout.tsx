@@ -35,16 +35,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${neuton.variable} bg-dots transition-all duration-300 ease-in-out antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${neuton.variable}  bg-radial text-foreground font-neuton  bg-dots transition-all duration-300 ease-in-out antialiased`}
       >
         <ThemeProvider>
           <div 
-            className="flex flex-col z-[-2]  h-screen max-w-2xl  mx-auto ">
-              <NavBar />
-              <div className="flex-1">
-                {children}
-              </div>
-              <Footer />
+            className="flex flex-col z-[-2]  h-screen max-w-7xl mx-auto ">
+                <NavBar />
+                <div className="flex-1 backdrop-blur-[1px] ">
+                  {children}
+                </div>
+                <Footer />
           </div>
         </ThemeProvider>
       </body>
